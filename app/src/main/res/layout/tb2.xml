@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tooooolbar"
+    android:layout_gravity="top"
+    android:background="@color/black2"
+    app:contentInsetStart="0dp"
+    android:layout_height="50dp">
+
+    <TextView
+        android:layout_width="172dp"
+        android:layout_height="match_parent"
+        android:id="@+id/title"
+        android:gravity="center_vertical"
+        android:text="EventFinder"
+        android:textColor="@color/green2"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:id="@+id/facebook"
+        android:src="@drawable/iconfacebook"
+        android:layout_height="40dp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:id="@+id/twitter"
+        android:src="@drawable/icontwitter"
+        android:layout_height="40dp"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:id="@+id/likeee"
+        android:src="@drawable/heart_outline"
+        android:layout_height="35dp"/>
+
+</androidx.appcompat.widget.Toolbar>

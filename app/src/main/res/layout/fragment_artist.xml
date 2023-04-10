@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_background"
+    tools:context=".ArtistFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_artist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:indeterminateTint="@color/green2"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="180dp"
+
+            android:layout_marginTop="300dp" />
+
+        <LinearLayout
+            android:id="@+id/no_artist_linear_layout"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_marginTop="320dp"
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/black2"
+                android:text="Artist/Music data unavailable"
+                android:textColor="@color/green2"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:background="@drawable/button"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

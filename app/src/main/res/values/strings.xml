@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EventFinder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="keyword">Keyword*</string>
+    <string name="distance_miles">Distance (Miles)*</string>
+    <string name="enter_the_keyword">Enter the Keyword</string>
+    <string-array name="category">
+        <item>All</item>
+        <item>Music</item>
+        <item>Sports</item>
+        <item>Arts &amp; Theatre</item>
+        <item>Film</item>
+        <item>Miscellaneous</item>
+    </string-array>
+
+</resources>

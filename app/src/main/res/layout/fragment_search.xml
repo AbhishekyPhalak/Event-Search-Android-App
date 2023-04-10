@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="false"
+    android:layout_centerVertical="false"
+    android:background="@color/grey_background"
+    tools:context=".SearchFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="545dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        app:cardBackgroundColor="#000000"
+        app:cardCornerRadius="25dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_the_keyword"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginEnd="22dp"
+            android:textCursorDrawable="@drawable/cursor"
+            android:layout_marginRight="22dp"
+            android:textColorHighlight="#4CAF50"
+            android:textColorHint="#A39C9C"
+            android:textColorLink="#4CAF50"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#ffffff"
+            android:textSize="21sp"/>
+
+        <TextView
+            android:id="@+id/textview_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:text="@string/keyword"
+            android:textColor="#4CAF50"
+            android:textColorHint="#4CAF50"
+            android:textColorLink="#4CAF50"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/textView_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:text="@string/distance_miles"
+            android:textColor="#4CAF50"
+            android:textColorHint="#4CAF50"
+            android:textColorLink="#4CAF50"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/editText_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="160dp"
+            android:textCursorDrawable="@drawable/cursor"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:backgroundTint="@color/green2"
+            android:ems="10"
+            android:text="10"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#4CAF50"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#4CAF50"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/textView_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="225dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:text="Category*"
+            android:textColor="#4CAF50"
+            android:textColorHint="#4CAF50"
+            android:textColorLink="#4CAF50"
+            android:textSize="21sp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="260dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#000000"
+            android:textSize="21sp"/>
+
+        <TextView
+            android:id="@+id/textView_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="307dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:text="Location"
+            android:textColor="#4CAF50"
+            android:textColorHint="#4CAF50"
+            android:textColorLink="#4CAF50"
+            android:textSize="21sp" />
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="208dp"
+            android:layout_marginLeft="208dp"
+            android:layout_marginTop="296dp"
+            android:text="Auto-Detect"
+            android:textColor="#A39C9C"
+            android:textSize="15sp"
+            app:thumbTint="@drawable/thump"
+            app:trackTint="@drawable/track" />
+
+        <EditText
+            android:id="@+id/editText_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:textCursorDrawable="@drawable/cursor"
+            android:backgroundTint="@color/green2"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#4CAF50"
+            android:textSize="21sp"
+            android:hint="Enter the Location"
+            android:textColorHint="#A39C9C"/>
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="135dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="420dp"
+            android:text="Search"
+            android:textStyle="bold"
+            app:backgroundTint="#7EBC36"
+            android:background="@drawable/button"/>
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="135dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="182dp"
+            android:layout_marginTop="420dp"
+            android:text="Clear"
+            android:textStyle="bold"
+            app:backgroundTint="#FB6A3C"
+            android:background="@drawable/button"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar9"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            android:layout_marginStart="300dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="69dp"
+            android:indeterminateTint="@color/green2" />
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

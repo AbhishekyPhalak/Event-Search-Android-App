@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    how to use viewpager2 in android studio  New Developer 2022 Youtube Video-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/grey_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include android:id="@id/tooooolbar"
+        layout="@layout/tb"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/Tab_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#070707"
+        app:tabIndicatorColor="#4CAF50"
+        app:tabTextColor="#FFFFFF"
+        app:tabSelectedTextColor="#4CAF50"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/Viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Tab_Layout">
+
+    </androidx.viewpager2.widget.ViewPager2>
+    
+</RelativeLayout>
