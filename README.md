@@ -2,11 +2,13 @@
 
 A mobile application that allows users to search for events using the **Ticketmaster API** and **Spotify API**. The backend is powered by **Node.js** and **Express.js**, deployed on **Google Cloud Platform (GCP)**. The Android frontend is developed in **Java** for a native mobile experience. The app is optimized for performance and integrates geolocation services to find nearby events.
 
+### Screenshot
+
+![android](https://github.com/user-attachments/assets/2032c72e-0375-49c4-9b37-5f8d04f87c75)
+
 ### Demonstration
 
-![image](https://github.com/user-attachments/assets/304444a6-7d7c-42e0-91f9-4a2621841b6f)
-
-![image](https://github.com/user-attachments/assets/695da390-2146-43e2-989d-de3804e291f3)
+[Watch the Event Search Demo Video](https://drive.google.com/file/d/1R9Z2aeq1qs-L2EyCsTQzbenjWxQc48GU/view?usp=sharing)
 
 ### Features
 
